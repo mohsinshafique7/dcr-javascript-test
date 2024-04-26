@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DCR Assignment</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <form id="myForm">
+        <div class="countries">
+            <label><input id="populationSize" type="radio" name="group" value="populationSize" checked />Population
+                Size</label>
+            <label><input id="noOfBoarders" type="radio" name="group" value="noOfBoarders" />No. Of Borders</label>
+            <label><input id="noOfTimezones" type="radio" name="group" value="noOfTimezones" />No. Of Timezones</label>
+            <label><input id="noOfLanguages" type="radio" name="group" value="noOfLanguages" />No. Of Languages</label>
+        </div>
+        <div class="regions">
+            <label><input id="countriesInRegion" type="radio" name="group" value="countriesInRegion" />Countries In
+                Region</label>
+            <label><input id="uniqueTimeZones" type="radio" name="group" value="uniqueTimeZones" />Unique
+                Timezones</label>
+        </div>
+    </form>
+    <div class="tooltip"></div>
+    <div id="chart-container">
+        <svg id="chart"></svg>
+    </div>
+
+    <table id="data-table">
+        <thead id="table-header">
+            <tr>
+                <th>Name</th>
+                <th>Alpha Code3</th>
+                <th>Region</th>
+                <th>Capital</th>
+                <th>Borders</th>
+                <th>Timezones</th>
+                <th>Population</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+    </table>
+    <div id="pagination"></div>
+    <script src="./JS/jquery.js"></script>
+    <script type="module" src="JS/main.js"></script>
+</body>
+
+</html>

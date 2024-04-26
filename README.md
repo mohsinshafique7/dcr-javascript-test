@@ -4,11 +4,11 @@ Thank you for taking the time to complete this exercise.
 
 ## Introduction
 
-This project is to build a simple web page with a form, a table and "bubble" chart to display country data as selected by the user. 
+This project is to build a simple web page with a form, a table and "bubble" chart to display country data as selected by the user.
 
-Please use HTML, JS and native JavaScript (also known as "Vanilla JS", use of jQuery is permissable) for the implementation of the core functionality described below. 
+Please use HTML, JS and native JavaScript (also known as "Vanilla JS", use of jQuery is permissable) for the implementation of the core functionality described below.
 
-Please do not use a JavaScript framework (React, Angular, etc). 
+Please do not use a JavaScript framework (React, Angular, etc).
 
 To create the "bubble" chart you may use any suitable library; D3.js will, for example, plot a chart similar to the following image:
 
@@ -27,12 +27,14 @@ The source data for this exercise can be found within this repository at: [data/
 On your form please allow the user to select from the following plot options:
 
 By country:
+
 - Population size
 - Number of borders
 - Number of timezones
 - Number of languages
 
 By region:
+
 - Number of countries in the region
 - Number of unique timezones in the region
 
@@ -42,12 +44,12 @@ They should only be allowed to pick one plot point at a time, but also be allowe
 
 ### Exercise 1 - Form and chart
 
-Please create a basic form for the user to make and update their selection, as described above. 
+Please create a basic form for the user to make and update their selection, as described above.
 
 Style as you feel appropriate, you may use any library to assist.
 
 Plot the selected criteria on a "bubble" chart.
- 
+
 ### Exercise 2 - Display as a table
 
 Underneath the chart display the same data as shown in the chart in a table.
@@ -55,3 +57,41 @@ Underneath the chart display the same data as shown in the chart in a table.
 ### Exercise 3 - Extended information
 
 When hovering over a bubble display a pop-up with more information about that country/region from the JSON data.
+
+## Solution Description
+
+This project demonstrates fetching data from a JSON file using the Fetch API. It features error handling that redirects users to an error page, with the ability to return to the main page. The project utilizes JavaScript modules and paginates data, displaying it both in a table format and as a chart.
+
+### Features
+
+**Data Fetching**: Asynchronously retrieves data from a JSON file using the Fetch API.
+**Error Handling**: Redirects users to an error page in the event of an error, allowing them to return to the main page.
+**Modular JavaScript**: Utilizes modular JavaScript files, enhancing code organization and maintainability.
+**Pagination**: Displays data in paginated format, showing 40 rows per page.
+Chart Display: Renders a chart alongside the paginated table, providing visual representation of the data.
+**Project Structure**
+
+**index.html**: Main HTML file.
+**main.js**: JavaScript module used by index.html.
+**error.html**: Error page HTML file.
+**error.js**: JavaScript module for error handling.
+**data.json**: JSON file containing project data.
+
+**Usage**
+
+Clone the repository.
+Ensure an HTTP server is running
+Navigate to the main page (index.html).
+Data will be fetched asynchronously from data.json.
+In case of an error, users will be redirected to the error page (error.html), with an option to return to the main page.
+
+**Dependencies**
+
+None
+
+**Additional Notes**
+
+For optimal performance, consider implementing server-side pagination for large datasets.
+
+Author
+Mohsin Shafique

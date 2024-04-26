@@ -1,0 +1,99 @@
+#chart-container {
+  border: #007bff solid 2px;
+  width: 100%;
+  height: 800px;
+}
+
+#chart {
+  width: 100%;
+  height: 100%;
+}
+
+.text-no-select {
+  user-select: none;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+/* Pagination container */
+#pagination {
+  margin-top: 20px;
+  display: flex;
+  /* Use flexbox */
+  justify-content: flex-end;
+}
+
+/* Pagination button */
+#pagination button {
+  background-color: #4caf50;
+  /* Green background */
+  border: none;
+  /* Remove border */
+  color: white;
+  /* White text */
+  padding: 10px 15px;
+  /* Padding */
+  text-align: center;
+  /* Center text */
+  text-decoration: none;
+  /* Remove underline */
+  display: inline-block;
+  /* Make display inline */
+  font-size: 16px;
+  /* Font size */
+  margin: 0 5px;
+  /* Add margin */
+  cursor: pointer;
+  /* Add cursor pointer */
+  border-radius: 5px;
+  /* Add border radius */
+}
+
+/* Selected pagination button */
+#pagination button.selected {
+  background-color: #45a049;
+  /* Darker green background */
+}
+
+/* Table */
+#myTable {
+  border-collapse: collapse;
+  /* Collapse table borders */
+  width: 100%;
+  /* Full width */
+}
+
+/* Table header */
+#data-table th {
+  background-color: #f2f2f2;
+  /* Light gray background */
+  border: 1px solid #ddd;
+  /* Add border */
+  padding: 8px;
+  /* Padding */
+  text-align: left;
+  /* Left-align text */
+}
+
+/* Table body rows */
+#data-table td {
+  border: 1px solid #ddd;
+  /* Add border */
+  padding: 8px;
+  /* Padding */
+}
+
+/* Alternate row color */
+#data-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+  /* Light gray background */
+}
