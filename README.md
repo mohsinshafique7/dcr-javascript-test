@@ -64,20 +64,20 @@ This project demonstrates fetching data from a JSON file using the Fetch API. It
 
 ### Features
 
-**Data Fetching**: Asynchronously retrieves data from a JSON file using the Fetch API.
-**Error Handling**: Redirects users to an error page in the event of an error, allowing them to return to the main page.
-**Modular JavaScript**: Utilizes modular JavaScript files, enhancing code organization and maintainability.
-**Pagination**: Displays data in paginated format, showing 40 rows per page.
-Chart Display: Renders a chart alongside the paginated table, providing visual representation of the data.
-**Project Structure**
+- **Data Fetching**: Asynchronously retrieves data from a JSON file using the Fetch API.
+- **Error Handling**: Redirects users to an error page in the event of an error, allowing them to return to the main page.
+- **Modular JavaScript**: Utilizes modular JavaScript files, enhancing code organization and maintainability.
+- **Pagination**: Displays data in paginated format, showing 40 rows per page.
+  Chart Display: Renders a chart alongside the paginated table, providing visual representation of the data.
+- **Project Structure**
 
-**index.html**: Main HTML file.
-**main.js**: JavaScript module used by index.html.
-**error.html**: Error page HTML file.
-**error.js**: JavaScript module for error handling.
-**data.json**: JSON file containing project data.
+- **index.html**: Main HTML file.
+- **main.js**: JavaScript module used by index.html.
+- **error.html**: Error page HTML file.
+- **error.js**: JavaScript module for error handling.
+- **data.json**: JSON file containing project data.
 
-**Usage**
+- **Usage**
 
 Clone the repository.
 Ensure an HTTP server is running
@@ -85,11 +85,11 @@ Navigate to the main page (index.html).
 Data will be fetched asynchronously from data.json.
 In case of an error, users will be redirected to the error page (error.html), with an option to return to the main page.
 
-**Dependencies**
+- **Dependencies**
 
 None
 
-**Additional Notes**
+- **Additional Notes**
 
 For optimal performance, consider implementing server-side pagination for large datasets.
 
